@@ -84,7 +84,7 @@ contract LawyerBillings {
             "This Lawyer does not exist!"
         );
         require(
-            bytes(addressToClient[_lawyerAddress].name).length != 0,
+            bytes(addressToClient[_clientAddress].name).length != 0,
             "This Client does not exist!"
         );
         allTasks.push(
